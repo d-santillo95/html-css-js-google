@@ -56,7 +56,6 @@ body{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: blue;
     margin: 0 8px 0 15px;
     padding: 0;
 }
@@ -78,13 +77,14 @@ body{
     right: -45px;
     width: 330px;
     height: 460px;
-    border: 1px solid #aaa;
-    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 8px;
     padding: 20px 0;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
 }
 
 .dropdown-menu{
@@ -93,6 +93,7 @@ body{
     flex-wrap: wrap;
     width: 300px;
 }
+
 .dropdown-menu > li > a{
     display: flex;
     flex-direction: column;
@@ -103,6 +104,14 @@ body{
     color: #5F6368;
     font-size: 13px;
     margin: 10px 0;
+}
+
+.dropdown-menu > li:first-child > a img{
+    border-radius: 50%;
+    height: 46px;
+    width: 46px;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 .dropdown-menu > li > a img{
