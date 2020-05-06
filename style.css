@@ -73,18 +73,23 @@ body{
 .container-dropdown-menu{
     display: none;
     position: absolute;
-    top: 30px;
-    right: -45px;
+    top: 50px;
+    right: 20px;
     width: 330px;
     height: 460px;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 8px;
     padding: 20px 0;
     overflow-y: auto;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
+    z-index: 2;
+    background-color: #fff;
+}
+
+.container-dropdown-menu.active-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
 }
 
 .dropdown-menu{
